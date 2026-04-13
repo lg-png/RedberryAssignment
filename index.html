@@ -8,14 +8,60 @@
 </head>
 <body>
 
+    <nav class="nav">
+        <ul>
+            <li><img id="logo" src="logoSVG.svg" alt="logo"></li>
+            <li><img src="sparkle.svg" alt="sparkle icon">Browse Courses</li>
+            <li><img src="book.svg" alt="">Enrolled Courses</li>
+            <li><img src="avatar.svg" alt=""></li>
+        </ul>
+    </nav>
+
     <div class="heroSlider">
-        <div class="slides">
-            <img class="slide" src="slide1.png" alt="Hero Slider Background">
-            <img class="slide" src="slide2.png" alt="Hero Slider Background">
-            <img class="slide" src="slide3.png" alt="Hero Slider Background">
+
+        <div class="info">
+            <h2>Start Learning Something New Today</h2>
+            <p>Explore a wide range of expert-led courses in design, development, business, and more. Find the skills you <br> need to grow your career and learn at your own pace.</p>
+            <button>Browse Courses</button>
         </div>
-        <button class="prev" onclick="prevSlide()">&#10094</button>
-        <button class="next" onclick="nextSlide()">&#10095</button>
+        <div class="slides">
+            <img class="slide" src="slide1.png" alt="Hero Slider Background 1">
+            <img class="slide" src="slide2.png" alt="Hero Slider Background 2">
+            <img class="slide" src="slide3.png" alt="Hero Slider Background 3">
+        </div>
+        <button class="prev arrows" onclick="prevSlide()">&lt;</button>
+        <button class="next arrows" onclick="nextSlide()">&gt;</button>
+
+        <div class="slideIndicators">
+                <span class="indicator active" onclick="currentSlide(1)"></span>
+                <span class="indicator" onclick="currentSlide(2)"></span>
+                <span class="indicator" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+        <h2>Continue Learning</h2>
+        <p>pick up where you left</p>
+    <div class="activeCourses">
+
+        <div class="activeCourse">
+            <img src="CourseCover.png" alt="course cover photo">
+            <p>lecturer Marilyn Mango</p>
+            <h3>Advanced React & Typescript Development</h3>
+            <button>View</button>
+        </div>
+
+            <div class="activeCourse">
+            <img src="CourseCover.png" alt="course cover photo">
+            <p>lecturer Marilyn Mango</p>
+            <h3>Advanced React & Typescript Development</h3>
+            <button>View</button>
+        </div>
+
+            <div class="activeCourse">
+            <img src="CourseCover.png" alt="course cover photo">
+            <p>lecturer Marilyn Mango</p>
+            <h3>Advanced React & Typescript Development</h3>
+            <button>View</button>
+        </div>
     </div>
     
 
